@@ -1,0 +1,46 @@
+.hero-part{
+    border-radius: 30px;
+    color: white;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 6%, rgba(0,212,255,1) 100%);
+  }
+  .picture-part{
+    overflow: hidden;
+      border-top-left-radius: 30%;
+    }
+    .margin-top{
+        margin-top: 80px;
+    }
+    .text{
+        text-align: justify;
+    }
+    .background-color{
+        background: #161a42;
+        transform: skewY(-3deg);
+    }
+    .virgin{
+        transform: skewY(3deg);
+    }
+    .background-married{
+        background: #fcab44;
+        transform: skewY(3deg);
+    }
+    .married{
+        transform: skewY(-3deg);
+    }
+    .background-widow{
+        background: #bd2c6c;
+        transform: skewY(-3deg);
+    }
+    .widow{
+        transform: skewY(3deg);
+    }
+    .card:hover img{
+        transform: scaleY(1.1);
+        transition: transform 2s ease-in-out;
+    }
+    .blog-info:hover{
+        box-shadow: 5px 5px 20px red;
+    
+
+    }
