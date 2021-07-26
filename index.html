@@ -14,39 +14,73 @@
   <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light container fixed-top mb-5">
             <div class="container-fluid">
-              <a class="navbar-brand fs-3" href="#"><i class="fa-2x text-danger fas fa-hand-holding-heart"></i><span class="text-danger fw-bolder ms-2">BOU</span> BAZAR</a>
+              <a class="navbar-brand fs-3" href="#hero-part"><i class="fa-2x text-danger fas fa-hand-holding-heart"></i><span class="text-danger fw-bolder ms-2">BOU</span> BAZAR</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bolder fs-5 mt-3">
-                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">About</a></li>
-                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Service</a></li>
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="#hero-part">Home</a></li>
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="#about">About</a></li>
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="#service">Service</a></li>
                 
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Category
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item fw-bolder" href="#">Virgin</a></li>
-                      <li><a class="dropdown-item fw-bolder" href="#">Divorce</a></li>
-                      <li><a class="dropdown-item fw-bolder" href="#">Widow</a></li>
+                      <li><a class="dropdown-item fw-bolder" href="#virgin">Virgin</a></li>
+                      <li><a class="dropdown-item fw-bolder" href="#divorce">Divorce</a></li>
+                      <li><a class="dropdown-item fw-bolder" href="#widow">Widow</a></li>
                     </ul>
                   </li>
-                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="#blog">Blog</a></li>
                 </ul>
           
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bolder fs-5 ms-auto mt-2">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bolder fs-5 mt-2">
                   <li>
-                    <a class="position-relative text-white" href="#"><i class="text-danger fa-2x fas fa-cart-plus"></i>
+                    <button class="btn btn-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><a class="position-relative text-white" href="#"><i class="text-danger fa-2x fas fa-cart-plus"></i>
                       <span class="position-absolute start-100 translate-middle badge rounded-pill bg-danger">0<span class="visually-hidden">unread messages</span>
                       </span>
                     </a>$00.00
+                  </button>
+
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                  <h2 id="offcanvasRightLabel" class="text-danger">বউ কিনতে এসেছেন?</h2>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                                      <h3>
+                                        বউ কিনতে পাওয়া যায় নারে ভাই। বাসায় বলে কাবিন দিয়ে ব্যবস্থা করে নিতে হয়<i class="text-warning  far fa-grin-wink"></i> 
+                                      </h3>
+                                      <button type="button" class="btn btn-danger w-100 mt-5">লক্ষী ছেলে বাসায় যাও</button>
+                    </div>
+                  </div>
+  
                   </li>
                   <li>
-                    <li><a class="dropdown-item fw-bolder" href="#"><i class="fa-2x text-danger fas fa-user-circle"></i></a></li>
-                    
+                    <button class="btn btn-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                      <i class="fa-2x text-danger fas fa-user-circle"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                      <h3 id="offcanvasRightLabel" class="fw-bolder">Profile</h3>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                     <div class="btn btn-outline-danger w-100 text-start"><i class="fas fa-user"></i> My Account</div>
+                     <div class="btn mt-2 btn-outline-danger w-100 text-start"><i class="fas fa-exclamation-triangle"></i> Notifications</div>
+                     <div class="btn mt-2 btn-outline-danger w-100 text-start"><i class="fas fa-envelope-open"></i> Message</div>
+                     <div class="btn mt-2 btn-outline-danger w-100 text-start"><i class="fas fa-shopping-cart"></i> Cart</div>
+                     <div class="btn mt-2 btn-outline-danger w-100 text-start"><i class="fas fa-heart"></i> Fevorite</div>
+                     <div class="btn mt-2 btn-outline-danger w-100 text-start"><i class="fab fa-jedi-order"></i> Order</div>
+                     <div class="btn mt-2 btn-outline-danger w-100 text-start"><i class="fas fa-gift"></i> Gift Card</div>
+                     <div class="btn mt-2 btn-outline-danger w-100 text-start"><i class="fas fa-sign-in-alt"></i> Sign-in</div>
+                     <div class="btn mt-2 btn-outline-danger w-100 text-start"><i class="fas fa-sign-out-alt"></i> Sign-up</div>
+                     
+                    </div>
+                  </div>
                   </li>
                 </ul>
               </div>
@@ -108,7 +142,7 @@
   <div class="text-center"><iframe src="https://free.timeanddate.com/clock/i7wpuqed/n940/fn7/fs20/tct/pct/ftb/th2" frameborder="0" width="128" height="30" allowtransparency="true"></iframe>
   </div>
   <!-- start of about part -->
-  <section class="about-part margin-top container">
+  <section id="about" class="about-part margin-top container">
     <h1>About Us</h1>
     <div class="row">
       <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
@@ -120,7 +154,7 @@
     </div>
   </section>
   <!-- start of Category part -->
-  <section class="category-part background-color text-white margin-top">
+  <section id="virgin" class="category-part background-color text-white margin-top">
       <div class="virgin p-5 container mt-5">
         <h2>Virgin</h2>
         <div class="row">
@@ -248,7 +282,7 @@
       </div>
   </section>
 
-  <section class="category-part background-married text-white margin-top">
+  <section id="divorce" class="category-part background-married text-white margin-top">
     <div class="married p-5 container mt-5">
       <h1>Divorce</h1>
       <div class="row">
@@ -337,7 +371,7 @@
     </div>
   </section>
 
-  <section class="category-part background-widow text-white margin-top">
+  <section id="widow" class="category-part background-widow text-white margin-top">
     <div class="widow p-5 container mt-5">
       <h1>Widow</h1>
       <div class="row">
@@ -427,7 +461,7 @@
 
   </section>
 <!-- start of Blog part -->
-<section class="blog-part margin-top container">
+<section id="blog" class="blog-part margin-top container">
   <h1>Blog</h1>
   <div class="row">
     
@@ -471,7 +505,7 @@
   </div>
 </section>
 <!-- start of service part -->
-<section class="service-part margin-top container">
+<section id="service" class="service-part margin-top container">
   <h1>Service</h1>
   <div class="row row-cols-1 row-cols-lg-3 g-2 g-lg-3">
     <div class="col">
@@ -502,7 +536,7 @@
 <section class="information-part margin-top bg-dark text">
   <div class="container text-white p-4">
     <div class="row">
-     <div class="col-6 col-md-6 col-lg-3">
+     <div class="col-6 col-md-6 col-lg-2">
       <h3 class="fw-bolder">Company</h3>
       <p>
         <a class="text-decoration-none" href="">Home</a><br>
@@ -512,7 +546,7 @@
         <a class="text-decoration-none" href="">Blog</a><br>
       </p>
      </div>
-     <div class="col-6 col-md-6 col-lg-3">
+     <div class="col-6 col-md-6 col-lg-2">
       <h3 class="fw-bolder">Information</h3>
       <p>
         <a class="text-decoration-none" href="">About Us</a><br>
@@ -522,7 +556,7 @@
         <a class="text-decoration-none" href="">Privacy Policy</a><br>
       </p>
      </div>
-     <div class="col-12 col-md-6 col-lg-3 text-center">
+     <div class="col-12 col-md-6 col-lg-4 text-center">
       <h3 class="fw-bolder">Contact With Us</h3>
       <p>
         <a class="text-decoration-none" href=""><i class="fa-2x text-white       mt-3 fab fa-facebook-square"></i></a>
@@ -533,8 +567,8 @@
 
       </p>
      </div>
-     <div class="col-12 col-md-6 col-lg-3">
-      <h4 class="fw-bolder">We are Member of</h4>
+     <div class="col-12 col-md-6 col-lg-4">
+      <h3 class="fw-bolder">We are Member of</h3>
       <p class="d-flex">
       <img class="w-50 rounded-circle" src="images/info/2.png" alt="">
       <img class="w-50 rounded-circle" src="images/info/3.jpg" alt="">
@@ -546,7 +580,6 @@
 
 </section>
 </main>
-
 
 <footer class="bg-dark text-white text-center pt-5">
   <p>Copyright © 2021 - it can't be used as a dating site. Design by <span class="fs-5 fw-bolder text-danger">Md Hasibul Hasasn</span></p>
